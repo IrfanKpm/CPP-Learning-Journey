@@ -1,0 +1,2 @@
+# CPP-Learning-Journey
+This repository contains a collection of C++ files representing my coding journey while learning C++ through various online resources, primarily YouTube videos. Each lab file (e.g., lab1.cpp, lab2.cpp, etc.) corresponds to a specific concept or exercise covered during my learning process.
