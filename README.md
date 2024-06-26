@@ -136,4 +136,28 @@ This repository contains a collection of C++ files representing my coding journe
     - After `delete`, set `ptr2` to `nullptr` to avoid dangling pointers.
 
   - **Usage**: Demonstrates the use of pointers with existing variables and dynamically allocated memory in C++.
+ 
+  ### **Lab 19** > [lab19.cpp](./lab19.cpp)
+
+- **Structs and Constants**:
+  - **Structure Definition**: Defines a `User` structure with constant (`const`) and mutable data members.
+  - **Initialization**: Initializes `User` instances (`irfan` and `salman`) with unique data.
+  - **Member Access and Modification**: Demonstrates accessing and modifying structure members (`cource_count`) directly and via a pointer (`s`).
+  - **Immutable Members**: Shows how `const` members (`uId`, `name`, `email`) prevent direct modification after initialization.
+
+### **Lab 20** > [lab20.cpp](./lab20.cpp)
+
+- **Enumerations**:
+  - **Enum Declaration**: Declares an enumeration `MsOffice` with underlying type `uint8_t`.
+  - **Enum Constants**: Defines constants (`BOLD`, `ITALIC`, `UNDERLINE`, `COSSED`) within the `MsOffice` enumeration.
+  - **Usage**: Assigns and prints the value of an enum constant (`ITALIC`) stored in an integer variable (`attr`).
+
+### **Lab 21** > [lab21.cpp](./lab21.cpp)
+
+- **Auto Keyword and Type Identification**:
+  - **Function Definition**: Defines a function `api_call()` that returns a string.
+  - **Main Function**: Uses the `auto` keyword to deduce the type of `responce` from the return value of `api_call()`.
+  - **Type Comparison**: Demonstrates comparing types using `typeid` to verify the type of `responce` as `string`.
+  - **Output**: Prints the API response obtained from `api_call()`.
+
 
