@@ -89,4 +89,51 @@ This repository contains a collection of C++ files representing my coding journe
     - Throws an exception (`"key"`) and catches specific exceptions (`int`, `float`) with corresponding handlers.
     - Includes a generic catch-all handler (`catch (...)`) for any unhandled exceptions.
 
+### **Lab 14** > [lab14.cpp](./lab14.cpp)
+
+- **Functions**:
+  - **Function Definition**: Defines a function (`add`) with parameters `x` and `y` to perform addition.
+  - **Function Prototypes**: Introduces function prototypes (`int add(int x, int y);`) and their role in C++.
+  - **Function Calls**: Demonstrates calling functions (`sayTwo()`, `returnTree()`, `add(6, 5)`) from `main()` and printing their results.
+
+### **Lab 15** > [lab15.cpp](./lab15.cpp)
+
+- **Pass by Value and Pass by Reference**:
+  - **Pass by Value**: Demonstrates passing arguments to a function (`changeValue`) by value.
+    - Modifies the value of `a` within the function scope without affecting the original variable.
+  - **Pass by Reference**: Illustrates passing arguments to a function (`setTozero`) by reference using reference variables (`&`).
+    - Modifies the value of `a` directly, reflecting changes in the original variable (`x`) outside the function.
+
+### **Lab 16** > [lab16.cpp](./lab16.cpp)
+
+- **Static Variables in Functions**:
+  - **Static Variable Declaration**: Defines a static variable (`life`) within a function (`lifeUp()`).
+  - **Function Execution**: Calls `lifeUp()` multiple times from `main()`, incrementing and returning the static variable.
+  - **Lifetime of Static Variable**: Demonstrates how static variables persist their values across function calls.
+
+### **Lab 17** > [lab17.cpp](./lab17.cpp)
+
+- **Bitwise Operations**:
+  - **Bitwise AND (`&`)**: Performs bitwise AND operation between `x` and `y`.
+  - **Bitwise OR (`|`)**: Performs bitwise OR operation between `x` and `y`.
+  - **Bitwise XOR (`^`)**: Performs bitwise XOR operation between `x` and `y`.
+  - **Right Shift (`>>`)**: Shifts bits of `x` to the right by 1 position.
+  - **Bitwise NOT (`~`)**: Performs bitwise NOT operation on `x`.
+
+### **Lab 18** > [lab18.cpp](./lab18.cpp)
+
+- **Pointers and Dynamic Memory Allocation**:
+  - **Case 1: Pointer to Existing Variable**:
+    - `ptr1` points to the memory address of the existing variable `x`.
+    - Address stored in `ptr1`: Address of variable `x`.
+    - Value pointed to by `ptr1`: Value of `x` (1000).
+  
+  - **Case 2: Pointer to Dynamically Allocated Memory**:
+    - `ptr2` points to a dynamically allocated memory location for an integer.
+    - Address stored in `ptr2`: Address of the dynamically allocated memory.
+    - Value pointed to by `ptr2`: Initially undefined until assigned (`*ptr2 = x;`).
+    - Memory allocated with `new` must be freed using `delete` to prevent memory leaks.
+    - After `delete`, set `ptr2` to `nullptr` to avoid dangling pointers.
+
+  - **Usage**: Demonstrates the use of pointers with existing variables and dynamically allocated memory in C++.
 
